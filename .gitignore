@@ -1,0 +1,18 @@
+# Datos generados localmente (contienen informacion operativa)
+Data/AUDITORIA_VENTAS.json
+Dashboard/Auditoria-Ventas-Report.html
+Dashboard/auditoria/
+
+# Compilados del add-in
+revit_addin_audit/bin/
+revit_addin_audit/obj/
+revit_addin_audit/Instalador/*.dll
+
+# Cache local, logs y temporales
+cache/
+__pycache__/
+Automation/
+*.tmp
+Thumbs.db
+Desktop.ini
+~$*

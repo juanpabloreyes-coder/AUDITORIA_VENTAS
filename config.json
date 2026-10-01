@@ -1,0 +1,28 @@
+{
+  "aps": {
+    "account_id": "17fefe95-3b69-4d44-bb94-0cbec2173aea",
+    "project_id": "5f587011-eb8e-4072-b4df-f16aee3915aa"
+  },
+  "proyecto_acc": "VENTAS GCP",
+  "raiz_nombres": ["Project Files", "Archivos de proyecto", "Plans"],
+  "subcarpeta_datos": "011_WIP",
+  "excluir_proyectos": [],
+  "excluir_rvt_regex": "\\.\\d{4}\\.rvt$",
+
+  "_carpeta_auditorias": "Donde el add-in AuditSync de cada integrante guarda las auditorias (misma carpeta compartida que usan PLANOS y PUBLICACIONES).",
+  "carpeta_auditorias": "C:\\Users\\Usuario\\DC\\ACCDocs\\GCPEASA\\TEMPORAL_GCP_BIM\\Project Files\\03_Common_Resources\\033_Costos_5D\\0337_SQDCM\\03373_AUDITORIA_VENTAS",
+
+  "equipos_xlsx": "C:\\Users\\Usuario\\DC\\ACCDocs\\GCPEASA\\GCP_TRANSFORMACIÓN_DIGITAL\\Project Files\\01_IMPLEMENTACIÓN_BIM\\0112_SQDCM\\Equipos e integrantes - VENTAS.xlsx",
+  "equipos_hoja": "Integrantes",
+  "alias_personas": {
+    "JUANPABLOREYESGCP": "JUAN PABLO REYES MEDINA"
+  },
+
+  "zona_horaria_utc": -6,
+
+  "cache": "cache/modelos_acc.json",
+  "json": "Data/AUDITORIA_VENTAS.json",
+  "plantilla": "Dashboard/Auditoria-Ventas-Report.template.html",
+  "html": "Dashboard/Auditoria-Ventas-Report.html",
+  "carpeta_proyectos": "auditoria"
+}

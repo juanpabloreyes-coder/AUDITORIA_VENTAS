@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>AUDITORIA_VENTAS Audit Sync</Name>
+    <Assembly>./AuditSync.dll</Assembly>
+    <AddInId>7FE03D32-7046-4359-B34F-F6C365BA7266</AddInId>
+    <FullClassName>AuditoriaVentas.AuditSync.App</FullClassName>
+    <VendorId>GCPEASA</VendorId>
+    <VendorDescription>GCPEASA - AUDITORIA_VENTAS</VendorDescription>
+  </AddIn>
+</RevitAddIns>

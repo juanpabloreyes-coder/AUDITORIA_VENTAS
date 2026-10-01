@@ -1,0 +1,29 @@
+AuditSync - AUDITORIA_VENTAS
+============================
+
+Que es esto?
+------------
+Un complemento de Revit que, cada vez que haces "Sincronizar con central"
+en un modelo del proyecto VENTAS GCP, revisa la salud del modelo con las
+mismas reglas del Checker (familias, CAD, worksets, rooms, vistas,
+duplicados, sistemas MEP...) y guarda el resultado en la carpeta
+03373_AUDITORIA_VENTAS. No modifica el modelo, no tiene botones ni
+ventanas y no envia nada a internet.
+
+Modelos de otros proyectos de ACC no se revisan.
+
+Como instalarlo
+----------------
+1. Copia esta carpeta completa a tu computadora (o abrela directo si ya
+   la tienes en el Desktop Connector).
+2. Haz doble clic en "instalar.bat".
+3. Abre Revit. Si sale un aviso de seguridad que dice "Unsigned Add-In",
+   dale clic en "Always Load". Solo aparece la primera vez.
+
+Como quitarlo
+--------------
+Doble clic en "desinstalar.bat".
+
+Dudas
+-----
+Cualquier cosa, preguntale a Juan Pablo.
