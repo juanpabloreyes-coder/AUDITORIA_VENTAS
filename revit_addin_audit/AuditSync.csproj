@@ -13,6 +13,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- La revision 5D se movio a su propio add-in (5D_VENTAS\revit_addin_5d). -->
+    <Compile Remove="Catalogo5D.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <!-- Ajusta esta ruta si Revit esta instalado en otro lugar. -->
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPI.dll</HintPath>
