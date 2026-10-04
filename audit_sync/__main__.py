@@ -54,6 +54,15 @@ def procesar(cfg, escribir_salida=True):
     roster = []
     if xlsx.exists():
         equipos = leer_equipos(xlsx, cfg.get("equipos_hoja", "Integrantes"))
+        # Modo prueba (igual que 5D): personas fuera del Excel que cuentan como integrantes para revisar el reporte.
+        # Dejar la lista vacia en config.json al terminar las pruebas.
+        from .fuentes import persona_compacta
+        ya = {e["compacta"] for e in equipos}
+        for extra in cfg.get("integrantes_prueba") or []:
+            k = persona_compacta(extra.get("integrante", ""))
+            if k and k not in ya:
+                equipos.append({"integrante": extra["integrante"], "equipo": extra.get("equipo", "PRUEBAS"), "compacta": k})
+                avisos.append(f"Modo prueba: {extra['integrante']} cuenta como integrante (config.json > integrantes_prueba).")
         personas = Personas(equipos, cfg.get("alias_personas"))
         por_equipo = {}
         for e in equipos:

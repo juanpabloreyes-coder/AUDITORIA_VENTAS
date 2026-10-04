@@ -18,6 +18,9 @@
     "JUANPABLOREYESGCP": "JUAN PABLO REYES MEDINA"
   },
 
+  "_integrantes_prueba": "Modo prueba: personas fuera del Excel que cuentan como integrantes. Dejar [] al terminar.",
+  "integrantes_prueba": [],
+
   "zona_horaria_utc": -6,
 
   "cache": "cache/modelos_acc.json",
