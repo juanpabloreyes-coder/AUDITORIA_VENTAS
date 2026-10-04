@@ -1,0 +1,3 @@
+audit_sync run
+Dashboard\Auditoria-Ventas-Report.html
+grupo=datos-acc

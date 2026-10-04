@@ -22,6 +22,8 @@ set PYTHONIOENCODING=utf-8
 echo ============================================== >> Automation\audit_sync.log
 echo Corrida mensual %OBJETIVO%: %date% %time% >> Automation\audit_sync.log
 
+REM Cierre mensual: busqueda completa en ACC, sin usar cache de carpetas
+set VENTAS_COMPLETO=1
 python -m audit_sync run >> Automation\audit_sync.log 2>&1
 
 if %ERRORLEVEL% EQU 0 (

@@ -45,10 +45,10 @@ def procesar(cfg, escribir_salida=True):
     cid, sec = os.environ.get("APS_CLIENT_ID"), os.environ.get("APS_CLIENT_SECRET")
     if not cid or not sec:
         raise SystemExit("Falta APS_CLIENT_ID / APS_CLIENT_SECRET (las mismas variables que usan los otros reportes).")
-    catalogo, av = catalogo_modelos(APS(cid, sec), cfg, _ruta(cfg.get("cache", "cache/modelos_acc.json")))
-    avisos += av
-
     grupos = leer_auditorias(_ruta(cfg["carpeta_auditorias"]), tz, cfg["aps"]["project_id"])
+    catalogo, av = catalogo_modelos(APS(cid, sec), cfg, _ruta(cfg.get("cache", "cache/modelos_acc.json")),
+                                    requeridos={iid for _, iid in grupos})
+    avisos += av
 
     xlsx = _ruta(cfg["equipos_xlsx"])
     roster = []
