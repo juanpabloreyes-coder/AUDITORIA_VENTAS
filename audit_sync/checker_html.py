@@ -587,7 +587,7 @@ def build_html(project_name, file_path, report_date, model_reports, unavailable_
     parts.append('<div class="hero-content">')
     parts.append('<p class="eyebrow"><span class="eyebrow-dot"></span>Proyecto · {}</p>'.format(html_escape(project_name)))
     parts.append('<h1><span>Reporte de auditoría.</span><span class="gradient-title health-title">Salud del modelo.</span></h1>')
-    parts.append('<p class="hero-copy">Una lectura clara del estado del modelo, sus incidencias y los puntos que requieren atención antes de la entrega.</p>')
+    parts.append('<p class="hero-copy">Finalidad: que los modelos Revit cumplan los estándares del Checker antes de la entrega. El porcentaje de salud general mide las revisiones aprobadas sobre las evaluadas. Meta: superar el 80%.</p>')
     parts.append('<div class="file-meta">')
     parts.append('<div class="file-meta-row">{}<span class="file-path">{}</span></div>'.format(
         svg_icon('<path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v5h5"></path>', 'meta-icon'), html_escape(file_path)))
